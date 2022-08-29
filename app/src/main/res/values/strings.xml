@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">CinestarTicketsProject</string>
+    <string name="hello_user_nice_to_have_you_back">Hello User\n Book Your Fav Movie!</string>
+    <string name="trending">Trending</string>
+    <string name="go_back_button">Go back</string>
+    <string name="Log_In">Login</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="edit_message">Username</string>
+    <string name="create_an_account">Create an Account</string>
+    <string name="password">Password</string>
+    <string name="enter_username">Username</string>
+    <string name="enter_name">Name</string>
+</resources>

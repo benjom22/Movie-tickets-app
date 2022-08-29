@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#321049"
+    tools:context=".MovieReservation">
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="40dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BookTicket">
+
+        <EditText
+            android:id="@+id/inputFirstName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/change_settings_bg"
+            android:ems="10"
+            android:fontFamily="@font/poppins"
+            android:hint="First Name"
+            android:includeFontPadding="false"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="30dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:textAlignment="textStart"
+            android:textColor="#FAFAFA"
+            android:textColorHint="#B1A0BE"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/inputLastName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/change_settings_bg"
+            android:ems="10"
+            android:fontFamily="@font/poppins"
+            android:hint="Last Name"
+            android:includeFontPadding="false"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="30dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:textAlignment="textStart"
+            android:textColor="#FAFAFA"
+            android:textColorHint="#B1A0BE"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="100dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cinestarlight" />
+
+
+    <EditText
+        android:id="@+id/inputEmailTicket"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/change_settings_bg"
+        android:ems="10"
+        android:fontFamily="@font/poppins"
+        android:hint="Email"
+        android:includeFontPadding="false"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="30dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:textAlignment="textStart"
+        android:textColor="#FAFAFA"
+        android:textColorHint="#B1A0BE"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/inputFirstName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout6" />
+
+    <EditText
+        android:id="@+id/inputSeats"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/change_settings_bg"
+        android:ems="10"
+        android:fontFamily="@font/poppins"
+        android:hint="Number of seats (Default 1)"
+        android:includeFontPadding="false"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="30dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:textAlignment="textStart"
+        android:textColor="#FAFAFA"
+        android:textColorHint="#B1A0BE"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/inputFirstName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5" />
+
+    <TextView
+        android:id="@+id/reservationmovie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="40dp"
+        android:background="#00FFC107"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Movie Name"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <TextView
+        android:id="@+id/BookTicket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:background="#00FFC107"
+        android:fontFamily="@font/poppins"
+        android:text="Fill all fields to get your tickets"
+        android:textColor="@color/purple_200"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reservationmovie" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/ConfirmTicket"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/button_design"
+        android:ems="9"
+        android:fontFamily="@font/poppins_bold"
+        android:includeFontPadding="false"
+        android:paddingStart="20dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="20dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="20dp"
+        android:text="Confirm"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputLastName"
+        app:layout_constraintVertical_bias="1.0">
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="40dp"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputEmailTicket">
+
+        <RadioGroup
+            android:id="@+id/RGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checkedButton="@id/radioButton3"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButton3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:buttonTint="#8D6BDB"
+                android:fontFamily="@font/poppins_bold"
+                android:text="MON"
+                android:textColor="@color/white" />
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:buttonTint="#8D6BDB"
+                android:fontFamily="@font/poppins_bold"
+                android:text="WED"
+                android:textColor="@color/white" />
+
+            <RadioButton
+                android:id="@+id/radioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:buttonTint="#8D6BDB"
+                android:fontFamily="@font/poppins_bold"
+                android:text="FRI"
+                android:textColor="@color/white" />
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="40dp"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
+
+        <RadioGroup
+            android:id="@+id/RGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checkedButton="@id/radioButton3"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButton3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:buttonTint="#8D6BDB"
+                android:fontFamily="@font/poppins_bold"
+                android:text="13PM"
+                android:textColor="@color/white" />
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:buttonTint="#8D6BDB"
+                android:fontFamily="@font/poppins_bold"
+                android:text="15 PM"
+                android:textColor="@color/white" />
+
+            <RadioButton
+                android:id="@+id/radioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:buttonTint="#8D6BDB"
+                android:fontFamily="@font/poppins_bold"
+                android:text="18pm"
+                android:textColor="@color/white" />
+
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
